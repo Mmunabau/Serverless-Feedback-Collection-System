@@ -127,7 +127,7 @@ Edit
 ## 🤝 Let's Connect
 
 Want to collaborate or hire? I'm open to cloud projects, internships, and roles.  
-📩 [Muhammedmunabau@email.com] — 🔗 [linkedin.com/in/YOUR-LINK] — 🧠 #AWS #Serverless #CloudEngineering
+📩 [Muhammedmunabau@email.com] — 🔗 [linkedin.com/in/ameen123] — 🧠 #AWS #Serverless #CloudEngineering
 
 ---
 
