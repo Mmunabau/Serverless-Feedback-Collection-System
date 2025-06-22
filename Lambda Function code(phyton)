@@ -1,0 +1,28 @@
+import json
+import uuid
+import boto3
+
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('Feedback')
+
+def lambda_handler(event, context):
+    body = json.loads(event['body'])
+    
+    feedback_id = str(uuid.uuid4())
+    name = body.get('name')
+    email = body.get('email')
+    message = body.get('message')
+    
+    table.put_item(Item={
+        'feedback_id': feedback_id,
+        'name': name,
+        'email': email,
+        'message': message
+    })
+    
+    return {
+        'statusCode': 200,
+        'headers': {'Content-Type': 'application/json'},
+        'body': json.dumps({'message': 'Feedback received!', 'feedback_id': feedback_id})
+    }
+
